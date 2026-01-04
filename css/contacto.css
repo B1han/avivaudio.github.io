@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.form-content {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  max-width: 1140px;     /* coincide con el ancho del site */
+  margin: 0 auto;        /* mantiene el contenedor centrado dentro del viewport */
+  padding-left: 3rem;    /* coincide con .px-5 (izquierda donde está el logo) */
+  padding-right: 3rem;
+  box-sizing: border-box;
+}
+
+.from-content h2 {
+  color: rgba(255, 0, 0, 0.89);
+  font-size: 40px;
+  margin-bottom: 25px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0;            /* pegado al borde izquierdo del container */
+}
+
+label {
+  color: rgba(56, 56, 56, 0.932);
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+input , textarea {
+  padding: 15px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 20px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 1.3px;
+  resize: vertical;
+}
+
+textarea#coments {
+  resize: none;
+  height: 140px;
+  width: 426px;
+  overflow: auto;
+  box-sizing: border-box;
+}
+
+.btn {
+    background-color: rgb(255, 0, 0);
+    width: 150px;
+    align-self: flex-end;
+    cursor: pointer;
+    color: white;
+}
+
+.btn:hover {
+     background-color: rgba(112, 0, 0, 0.801);
+     color: blue;
+}
+
+/* Mobile: el form ocupa todo el ancho */
+@media (max-width: 991px) {
+  .form-content { padding-left: 1rem; padding-right: 1rem; }
+  .form-content form { width: 100%; }
+}
