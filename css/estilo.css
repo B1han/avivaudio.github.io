@@ -505,7 +505,7 @@ footer {
   }
 }
 
-/* Forazar imágenes */
+/* Forzar imágenes */
 .p-5 > img.img-fluid {
   width: 500px;
   height: 400px;
@@ -529,21 +529,24 @@ footer {
     width: 160px;
     height: 160px;
   }
-
 }
 
-.navbar-brand img {
-  height: 80px;
-  width: auto;
+.p-5 > video, video.img-fluid, .video-responsive {
   max-width: 100%;
+  width: 100%;
+  height: auto;
   display: block;
+  margin-left: auto;
 }
 
-/* Ajustes para pantallas pequeñas */
+@media (max-width: 991.98px) {
+  .p-5 > video, video.img-fluid {
+    max-height: 400px;
+  }
+}
+
 @media (max-width: 576px) {
-  .navbar-brand img { height: 48px; }
-  .px-5 { padding-left: 0.5rem !important; padding-right: 0.5rem !important; }
+  .p-5 > video, video.img-fluid {
+    max-height: 280px;
+  }
 }
-
-body { padding-top: 100px; }
-@media (max-width: 576px) { body { padding-top: 72px; } }
