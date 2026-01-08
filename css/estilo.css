@@ -529,4 +529,21 @@ footer {
     width: 160px;
     height: 160px;
   }
+
 }
+
+.navbar-brand img {
+  height: 80px;
+  width: auto;
+  max-width: 100%;
+  display: block;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 576px) {
+  .navbar-brand img { height: 48px; }
+  .px-5 { padding-left: 0.5rem !important; padding-right: 0.5rem !important; }
+}
+
+body { padding-top: 100px; }
+@media (max-width: 576px) { body { padding-top: 72px; } }
